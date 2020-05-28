@@ -12,7 +12,7 @@ const Routes: React.FC = () => {
       <h2>carregando...</h2>
     )
   }
-  
+  //usando ternário para validar qual rota será mostrada de acordo com o resultado do signed
   return signed ? <AppRoutes /> : <AuthRoutes />
     
 }

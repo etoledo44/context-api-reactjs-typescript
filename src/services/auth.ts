@@ -1,3 +1,4 @@
+//interface Response usada como tipo da promise de retorno
 interface Response{
     token: string;
     user: {
@@ -6,17 +7,17 @@ interface Response{
     };
 }
 
+//aqui podemos definir um retorno para a função , :Promisse<tipoResponse>, retorna uma promise do tipo Response
 export function signIn():Promise<Response> {
     return new Promise(resolve=>{
         setTimeout(() => {
             resolve({
-                token: 'kljkljadklsj',
+                token: 'esse_e_meu_token_secreto_56524$$##2',
                 user: {
-                    name: 'diego',
-                    email: 'diegoo@adksd.com'
+                    name: 'Chromium',
+                    email: 'chromium@js.com'
                 }
             })
-            
         }, 2000);
     })
 }
